@@ -2,9 +2,15 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>page web</title>
 </head>
 <body>
+<form action="display" method="post">
+Auteur <input type="text" name="auteur" required pattern="[A-Z a-z]{3,30}"><br>
+Prix<input type="number" name="prix" min="1" required><br>
+Ttitre<input type="text" name="titre" required><br>
+<input type="submit" value="afficher">
 
+</form>
 </body>
 </html>
