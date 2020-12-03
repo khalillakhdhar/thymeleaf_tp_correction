@@ -3,13 +3,14 @@ package com.orsys.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-
+import com.orsys.model.Livre;
 @Controller
 public class HomeController {
 @GetMapping("")
 public String home(Model m)
 {
-m.addAttribute("message","ok");
+	Livre l=new Livre("Les miserables","auteur",100);
+m.addAttribute("message",l.toString());
 return "index";
 }
 }
